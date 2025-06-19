@@ -2,10 +2,8 @@ import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 
 export function meta({params}: Route.MetaArgs) {
-    const newTitle =  "New React Router App " & params.id;
-
     return [
-        { title: newTitle},
+        { title: "New React Router App"},
         { name: "description", content: "Welcome to React Router!"},
     ];
 }

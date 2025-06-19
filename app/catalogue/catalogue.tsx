@@ -1,4 +1,7 @@
+import { useNavigate, Link } from "react-router-dom";
+
 export function Catalogue() {
+
     return (
     <main>
         <h1>Books</h1>
