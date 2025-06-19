@@ -1,12 +1,8 @@
 import { useNavigate, Link } from "react-router-dom";
+import bookService from "~/services/bookService";
 
 export function Catalogue() {
-
-    const books = [
-        {"id": 1, "title": "The Gathering", "author": "C.J. Tudor"},
-        {"id": 2, "title": "Broken Dolls", "author": "Ally Malinenko"},
-        {"id": 3, "title": "Salem's Lot", "author": "Stephen King"},
-    ];
+    const books = bookService.searchBooks();
 
     return (
     <main>
