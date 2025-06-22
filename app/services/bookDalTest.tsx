@@ -5,13 +5,6 @@ const books = [
     {"id": 4, "title": "Test", "author": {"firstname": "Test", "lastname": "Test", "fullname": "Test"}, "genre":  "Dummy"}
 ];
 
-// const books = [
-//     {"id": 1, "title": "The Gathering", "author": "C.J. Tudor"},
-//     {"id": 2, "title": "Broken Dolls", "author": "Ally Malinenko"},
-//     {"id": 3, "title": "Salem's Lot",  "author": "Stephen King"},
-//     {"id": 4, "title": "Test", "author": "Test"}
-// ];
-
 const BooksDal = {
 
     searchBooks: function() {
