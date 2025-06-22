@@ -1,6 +1,7 @@
+import type {BookType} from "~/shared/types/booktype";
 
-export function BookRow({title, author, genre}) {
+export function BookRow(props: BookType) {
     return (
-        <div data-genre={genre}>{title} - {author}</div>
+        <div data-genre={props.genre}><p>{props.title} - {props.author} - ID: {props.id ? props.id : "None"}</p></div>
     )
 }
