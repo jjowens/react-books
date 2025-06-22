@@ -14,9 +14,11 @@ export function Catalogue() {
                     <p>We got books. Well some of them</p>
                     {
                         books.map(item => <BookRow
+                            id={item.id}
                             author={item.author.fullname}
                             title={item.title}
-                            genre={item.genre}/>)
+                            genre={item.genre}
+                        />)
                     }
                 </div>
                 :
